@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/FIA_userImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:adjustViewBounds="true"
+            android:background="@color/light_grey_200"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/FIA_buttonEditImage2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/light_grey_200"
+            app:layout_constraintBottom_toBottomOf="@+id/FIA_userImage"
+            app:layout_constraintEnd_toEndOf="@+id/FIA_userImage"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/FIA_guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/activity_vertical_margin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/FIA_guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/FIA_labelGreetings"
+            style="@style/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/label_info_account_greetings"
+            app:layout_constraintStart_toStartOf="@+id/FIA_guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_userImage" />
+
+        <View
+            android:id="@+id/FIA_background1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/layout_background"
+            app:layout_constraintBottom_toBottomOf="@id/FIA_etUserCardSecurityCode"
+            app:layout_constraintEnd_toStartOf="@+id/FIA_guidelineRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/FIA_guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelGreetings"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/FIA_labelAccount"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_info_account_data"
+            app:layout_constraintStart_toStartOf="@+id/FIA_guidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/FIA_background1" />
+
+        <TextView
+            android:id="@+id/FIA_labelEmail"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_email"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelAccount"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelAccount" />
+
+        <EditText
+            android:id="@+id/FIA_etUserEmail"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/FIA_guidelineRight"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelEmail"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelEmail" />
+
+        <TextView
+            android:id="@+id/FIA_labelPassword"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_password"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserEmail"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserEmail" />
+
+        <EditText
+            android:id="@+id/FIA_etUserPassword"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserEmail"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelPassword"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelPassword" />
+
+        <TextView
+            android:id="@+id/FIA_labelPersonalData"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/label_info_account_personal_data"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserPassword"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserPassword" />
+
+        <TextView
+            android:id="@+id/FIA_labelName"
+            style="@style/tiny_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_name"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelPersonalData"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelPersonalData"
+            tools:layout_conversion_absoluteHeight="14dp"
+            tools:layout_conversion_absoluteWidth="29dp" />
+
+        <EditText
+            android:id="@+id/FIA_etUserName"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserPassword"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelName"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelName" />
+
+        <TextView
+            android:id="@+id/FIA_labelSurname"
+            style="@style/tiny_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_surname"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserName"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserName" />
+
+        <EditText
+            android:id="@+id/FIA_etUserSurname"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserName"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelSurname"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelSurname" />
+
+        <TextView
+            android:id="@+id/FIA_labelBirthday"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_birthday"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserSurname"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserSurname" />
+
+        <EditText
+            android:id="@+id/FIA_etUserBirthday"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserSurname"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelBirthday"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelBirthday" />
+
+        <TextView
+            android:id="@+id/FIA_labelPhone"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_phone_number"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserBirthday"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserBirthday" />
+
+        <EditText
+            android:id="@+id/FIA_etUserPhone"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserBirthday"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelPhone"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelPhone" />
+
+        <TextView
+            android:id="@+id/FIA_labelAddress"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/label_info_account_address"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserPhone"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserPhone" />
+
+        <TextView
+            android:id="@+id/FIA_labelStreet"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_street"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelAddress"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelAddress" />
+
+        <EditText
+            android:id="@+id/FIA_etUserStreet"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserPhone"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelStreet"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelStreet" />
+
+        <TextView
+            android:id="@+id/FIA_labelStreetNumber"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_info_account_street_number"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserStreet"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserStreet" />
+
+        <EditText
+            android:id="@+id/FIA_etUserStreetNumber"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserStreet"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelStreetNumber"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelStreetNumber" />
+
+        <TextView
+            android:id="@+id/FIA_labelPostalCode"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_info_account_postal_code"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserStreetNumber"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserStreetNumber" />
+
+        <EditText
+            android:id="@+id/FIA_etUserPostalCode"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserStreetNumber"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelPostalCode"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelPostalCode" />
+
+        <TextView
+            android:id="@+id/FIA_labelCity"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_info_account_city"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserPostalCode"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserPostalCode" />
+
+        <EditText
+            android:id="@+id/FIA_etUserCity"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserPostalCode"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelCity"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelCity" />
+
+        <TextView
+            android:id="@+id/FIA_labelDistrict"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_info_account_district"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserCity"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserCity" />
+
+        <EditText
+            android:id="@+id/FIA_etUserDistrict"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserCity"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelDistrict"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelDistrict" />
+
+        <TextView
+            android:id="@+id/FIA_labelPaymentMethod"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/label_info_account_payment_method"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserDistrict"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserDistrict" />
+
+        <TextView
+            android:id="@+id/FIA_labelCardNumber"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_card_number"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelPaymentMethod"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_labelPaymentMethod" />
+
+        <EditText
+            android:id="@+id/FIA_etUserCardNumber"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserDistrict"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelCardNumber"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelCardNumber" />
+
+        <TextView
+            android:id="@+id/FIA_labelCardExpiringDate"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_card_expiring_date"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserCardNumber"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserCardNumber" />
+
+        <EditText
+            android:id="@+id/FIA_etUserCardExpiringDate"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserCardNumber"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelCardExpiringDate"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelCardExpiringDate" />
+
+        <TextView
+            android:id="@+id/FIA_labelCardSecurityCode"
+            style="@style/tiny_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_info_account_card_security_code"
+            app:layout_constraintStart_toStartOf="@+id/FIA_etUserCardExpiringDate"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_etUserCardExpiringDate" />
+
+        <EditText
+            android:id="@+id/FIA_etUserCardSecurityCode"
+            style="@style/body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/FIA_buttonEdit"
+            app:layout_constraintEnd_toEndOf="@+id/FIA_etUserCardExpiringDate"
+            app:layout_constraintStart_toStartOf="@+id/FIA_labelCardSecurityCode"
+            app:layout_constraintTop_toBottomOf="@id/FIA_labelCardSecurityCode" />
+
+        <Button
+            android:id="@+id/FIA_buttonEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/button_sign_in"
+            app:layout_constraintEnd_toStartOf="@+id/FIA_guidelineRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/FIA_guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/FIA_background1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

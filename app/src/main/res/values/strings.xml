@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Satishop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cerca">Cerca</string>
+    <string name="app_label">Label</string>
+    <string name="search_hint">Cerca</string>
+    <string name="title1">Prodotto</string>
+    <string name="prodotto">Prodotto</string>
+
+    <string name="test_titolo">Cry for a Shadow</string>
+    <string name="article1">Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.Many a Beatle fanatic started down the outtake road, like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.</string>
+    <string name="app_name">Satishop</string>
+
+    <string name="button_edit">Modifica</string>
+    <string name="button_logout">Logout</string>
+    <string name="button_sign_in">Registrati</string>
+    <string name="button_login">Accedi</string>
+
+    <string name="label_name">Nome</string>
+    <string name="label_surname">Cognome</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_password">Password</string>
+    <string name="label_birthday">Data di nascita</string>
+    <string name="label_phone">Numero di telefono</string>
+    <string name="label_street">Via</string>
+    <string name="label_info_account_greetings">Ciao!</string>
+    <string name="label_info_account_data">Dati account</string>
+    <string name="label_info_account_personal_data">Dati personali</string>
+    <string name="label_info_account_email">E-mail</string>
+    <string name="label_info_account_password">Password</string>
+    <string name="label_info_account_surname">Cognome</string>
+    <string name="label_info_account_birthday">Data di nascita</string>
+    <string name="label_info_account_phone_number">Numero di telefono</string>
+    <string name="label_info_account_address">Indirizzo</string>
+    <string name="label_info_account_street">Via</string>
+    <string name="label_info_account_payment_method">Metodo di pagamento</string>
+    <string name="label_info_account_street_number">Numero civico</string>
+    <string name="label_info_account_postal_code">Codice postale</string>
+    <string name="label_info_account_city">Città</string>
+    <string name="label_info_account_district">Provincia</string>
+    <string name="label_info_account_card_number">Numero carta</string>
+    <string name="label_info_account_card_expiring_date">Data di scadenza</string>
+    <string name="label_info_account_card_security_code">Codice di sicurezza</string>
+    <string name="label_sign_in">Accedi</string>
+    <string name="label_no_account_register">Non hai un account? Registrati adesso</string>
+    <string name="label_or">Oppure</string>
+
+    <string name="title_activity_di_prova">ActivityDiProva</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="paybut1">PatBut1</string>
+    <string name="paybut2">PayBut2</string>
+</resources>
